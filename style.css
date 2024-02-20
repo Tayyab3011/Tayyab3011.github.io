@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Montserrat', sans-serif !important; */
+    font-family: 'Roboto', sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* ==============style for BL0g1 ================= */
+.figure-caption{
+    font-size: 14px;
+    color: black;
+    line-height: 1.5;
+}
+.span1{
+    padding: 0 20px 0 0;
+    border-right: 4px solid rgb(250, 120, 6);
+    font-weight: bold;
+    cursor: pointer;
+}
+.span2{
+    padding: 0 20px;
+    
+}
+.icons a i{
+    font-size: 25px;
+    padding-right: 18px;
+}
+p.border-text{
+    padding: 20px;
+    border: 1px solid grey;
+}
+p.art-text{
+    font-size: 20px;
+    margin-top: 10px;
+    padding-right: 20px;
+}
+.line{
+    width: 40px;
+    height: 5px;
+    background-color: rgb(250, 120, 6);
+}
+
+/* ==========style for English HTML ============ */
+.slider-img{
+    height: 80vh;
+}
+
+.slider1{
+    background: linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('images/slider1.jpg');
+    background-size: cover;
+    background-position: center center;
+
+}
+.slider2{
+   
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('images/slider2.jpg');
+    background-size: cover;
+    background-position: right center;
+
+}
+.slider3{
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('images/slider3.jpg'); 
+    background-size: cover;
+    background-position: center center;
+}
+
+.card{
+    z-index: -2;
+}
+.carousel-inner{
+    z-index: -4;
+}
+.carousel-control-prev{
+    z-index: -2;
+}
+.carousel-control-next-icon{
+    z-index: -2;
+}
+
+
+

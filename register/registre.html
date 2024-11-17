@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- ================ FONT AESOME================= -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ================GOOGLE FONTS================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ========custom CSS================zzzzzzzzzzzzzzzzzzzzzzzzz -->
+    <link rel="stylesheet" href="/index.css" />
+    <!-- =============NAV BAR csss============== -->
+    <link rel="stylesheet" href="/navbar.css" />
+    <!-- ================footer css================== -->
+    <link rel="stylesheet" href="/footer.css" />
+    <!-- ================Registeration style css================== -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>YCC- BLOG1</title>
+  </head>
+
+  <body>
+    <!-- =========================== NAVBAR =========================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-none" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-3" href="#">
+          <img src="/images/ycc.png" alt="" width="250px" height="60px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+
+            <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Achievements</a>
+                    </li> -->
+
+            <li class="nav-item">
+              <a class="nav-link" href="/contact/login.html">Contact</a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link blog-link"
+                href="/english.html"
+                target="_blank"
+              >
+                Blogs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link blog-link" href="/blog1.html" target="_blank"
+                >New Release</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div
+        class="container-fluid header header-register d-flex justify-content-center"
+        style="height: 40vh"
+      >
+        <div class="row d-flex justify-content-center align-items-center">
+          <h1
+            style="
+              color: rgb(255, 255, 255);
+              font-weight: bold;
+              text-shadow: 10px 10px 10px black;
+            "
+          >
+            YOUTH CLIMATE CONNECT
+          </h1>
+        </div>
+      </div>
+    </header>
+
+    <section class="mt-5">
+      <div class="container-fluid bg-form">
+        <div class="container">
+          <div class="row p-5">
+            <div class="col-sm-12 col-lg-3 col-md-12"></div>
+            <div class="col-sm-12 col-lg-6 col-md-12">
+              <div class="container login p-5 border rounded-5 text-white">
+                <img
+                  class="img-fluid"
+                  src="/images/ycc.png"
+                  alt="logo of YCC"
+                  width="80%"
+                />
+                <h3 style="color: rgb(2, 5, 57);">Register yourself as Volunteer</h3>
+                <div class="mt-4">
+                  <form id="registrationForm">
+                    <div class="form-group">
+                      <label for="firstName"
+                        >First Name <span class="error">*</span></label
+                      >
+                      <input type="text" id="firstName" required />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="lastName"
+                        >Last Name <span class="error">*</span></label
+                      >
+                      <input type="text" id="lastName" required />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="email"
+                        >Email <span class="error">*</span></label
+                      >
+                      <input type="email" id="email" required />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="mobile"
+                        >Mobile Number <span class="error">*</span></label
+                      >
+                      <input
+                        type="tel"
+                        id="mobile"
+                        pattern="03[0-9]{9}"
+                        placeholder="Format: 03XXXXXXXXX"
+                        required
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="dob"
+                        >Date of Birth <span class="error">*</span></label
+                      >
+                      <input type="date" id="dob" required />
+                      <div id="dobError" class="error"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="province"
+                        >Province of Pakistan
+                        <span class="error">*</span></label
+                      >
+                      <select id="province" required>
+                        <option value="" disabled selected>
+                          Select your province
+                        </option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Sindh">Sindh</option>
+                        <option value="Khyber Pakhtunkhwa">
+                          Khyber Pakhtunkhwa
+                        </option>
+                        <option value="Balochistan">Balochistan</option>
+                        <option value="Gilgit-Baltistan">
+                          Gilgit-Baltistan
+                        </option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="city"
+                        >City <span class="error">*</span></label
+                      >
+                      <input type="text" id="city" required />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="gender"
+                        >Gender <span class="error">*</span></label
+                      >
+                      <select id="gender" required>
+                        <option value="" disabled selected>
+                          Select your gender
+                        </option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="areaOfInterest"
+                        >Area of Interest <span class="error">*</span></label
+                      >
+                      <select id="areaOfInterest" required>
+                        <option value="" disabled selected>
+                          Select an area of interest
+                        </option>
+                        <option value="Plantation">Plantation</option>
+                        <option value="Community Volunteer">
+                          Community Volunteer
+                        </option>
+                        <option value="Health">Health</option>
+                      </select>
+                    </div>
+
+                    <button type="submit">Register</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-3 col-md-12"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================footer==========------ -->
+
+    <footer>
+      <div class="container-fluid fluid1 mt-5">
+        <div class="container text-center footer">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-4 mb-3 mt-5">
+              <figure class="figure">
+                <img
+                  class="img-fluid"
+                  src="/images/ycc.png"
+                  alt="logo of YCC"
+                  width="80%"
+                />
+                <p class="center-res mt-4">
+                  Unite for Change, Plant for tomorrow
+                </p>
+              </figure>
+            </div>
+            <div
+              class="col-12 col-md-4 col-lg-4 mb-3 d-flex flex-column mt-5 links"
+            >
+              <h2>LINKS</h2>
+              <a href="">Home</a>
+              <a href="">About</a>
+              <a href="">Achievements</a>
+              <a href="">Contact</a>
+              <a href="">English blog</a>
+              <a href="">Urdu blog</a>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 mb-3 mt-5">
+              <div class="icons icon">
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+              </div>
+              <div class="contact container d-flex flex-column">
+                <p class="mt-5">ycc@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid mt-0">
+          <div class="container">
+            <div class="row">
+              <div class="col fs-6 text-center">
+                &copy; All rights are reserved for Youth climate connect- YCC
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- my register.js -->
+     <script src="register.js"></script>
+    <!-- my cutom JS file -->
+    <script src="/index.js"></script>
+
+    <!-- ================JS BOOTSTRAP================= -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

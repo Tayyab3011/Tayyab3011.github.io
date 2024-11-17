@@ -1,0 +1,38 @@
+form {
+  max-width: 400px;
+  margin: auto;
+  color: black;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+button:hover {
+  background-color: #45a049;
+}
+.login {
+  background-color: rgb(194, 237, 191);
+  border-radius: 20px;
+}
